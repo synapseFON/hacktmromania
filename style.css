@@ -65,15 +65,34 @@
 
   .hero-container{
     height: 100vh;
-    background-image: url(Hero.png);
+    background-image: url(pocetnablur.png);
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: contain ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
   }
 
+  .hero-container h1{
+    font-size: 12rem;
+    animation: pulsate 5s ease-out;
+  animation-iteration-count: infinite;
+  }
+  .hero-container p{
+    font-size: 3rem;
+    color: #fff;
+    overflow: hidden; 
+    border-right: .15em solid rgb(255, 255, 255); 
+    white-space: nowrap; 
+    animation: typing 2.5s steps(40) 1;
+  }
   section{
     background: linear-gradient(169.17deg, #E4E098 1.89%, rgba(154, 181, 139, 0.83) 21.15%, #477873 61.05%, #2D5652 91.61%);
     box-shadow: 0px -8px 8px 5px rgba(0, 0, 0, 0.15);
+    height: 3000px;
   }
   .row{
     display: flex;
@@ -81,20 +100,23 @@
     height: 400px;
   }
   .row1{
-    height: 300px;
-
+    height: 500px;
+    margin-bottom: 200px;
   }
   .row1 .column{
     margin: 0 10rem;
     font-size: 1.5rem;
   }
   .row1 h1{
-    font-size: 3.3rem !important;
+    font-size: 5rem !important;
+    margin-top: 6rem;
     margin-bottom: 20px;
   }
   .row1 p{
     text-align: center;
     font-size: 1.9rem;
+   color: #fff;
+   margin-bottom: 5rem;
   }
   .row2{
     height: 450px;
@@ -106,17 +128,19 @@
     text-align: right;
   }
   .row2 h1{
-    font-size: 2.8rem !important;
+    font-size: 2.8rem ;
+    text-align: justify;
   }
   .row2 p{
     font-size: 1.3rem;
+    text-align: justify;
   }
   .row2 img{
     width: 830px;
     height: 430px;
     margin-left: 3rem;
   }
-  
+ 
 
   .column{
     display: flex;
@@ -125,4 +149,21 @@
     align-items: center;  
   }
 
+
 @import url(//db.onlinewebfonts.com/c/b8efc807de4361147855dd87d07cb12f?family=Ano+Stencil); 
+@keyframes pulsate {
+ 
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1.0;
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 51.5% }
+}
