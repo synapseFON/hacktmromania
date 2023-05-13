@@ -76,6 +76,10 @@
     flex-direction: column;
     background-attachment: fixed;
   }
+  .hero-container i{
+    font-size: 8rem;
+    color: #33333358;
+  }
 
   .hero-container h1{
     font-size: 12rem;
