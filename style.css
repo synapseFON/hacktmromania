@@ -81,8 +81,14 @@
   .hero-container i{
     font-size: 8rem;
     color: #3e3e3e58;
+
+  }
+  .hero-container a{
     position: absolute;
     bottom:1rem;
+    margin: 0 auto;
+
+  
   }
 
   .hero-container h1{
