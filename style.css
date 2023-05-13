@@ -16,7 +16,10 @@
 
   h1 {
     font-size: 2em;
-    margin-bottom: 0.5em;
+    font-family: Ano Stencil;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
   }
   
   h2 {
@@ -24,11 +27,14 @@
     margin-bottom: 0.5em;
   }
   
-
+  p{
+    font-family: Anybody;
+    color: rgb(197, 197, 197);
+  }
   a {
     color: #007bff;
     text-decoration: none;
-  }
+  } 
   
   a:hover {
     text-decoration: underline;
@@ -37,7 +43,7 @@
 
   .container {
     /* max-width: 1500px; */
-    margin: 0 10rem 0 2rem;
+    margin: 0 2rem;
     padding: 0 20px;
   }
   
@@ -59,20 +65,66 @@
 
   .hero-container{
     height: 100vh;
-  }
-  .hero-container img{
-    height: 100vh;
+    background-image: url(Hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain ;
   }
 
+  section{
+    background: linear-gradient(169.17deg, #E4E098 1.89%, rgba(154, 181, 139, 0.83) 21.15%, #477873 61.05%, #2D5652 91.61%);
+    box-shadow: 0px -8px 8px 5px rgba(0, 0, 0, 0.15);
+  }
   .row{
     display: flex;
     flex-direction: row;
-    height: 700px;
+    height: 400px;
+  }
+  .row1{
+    height: 300px;
 
   }
+  .row1 .column{
+    margin: 0 10rem;
+    font-size: 1.5rem;
+  }
+  .row1 h1{
+    font-size: 3.3rem !important;
+    margin-bottom: 20px;
+  }
+  .row1 p{
+    text-align: center;
+    font-size: 1.9rem;
+  }
+  .row2{
+    height: 450px;
+    gap: 3rem;
+    margin: 2rem auto;
+
+  }
+  .row2 p, .row2 h1{
+    text-align: right;
+  }
+  .row2 h1{
+    font-size: 2.8rem !important;
+  }
+  .row2 p{
+    font-size: 1.3rem;
+  }
+  .row2 img{
+    width: 830px;
+    height: 430px;
+    margin-left: 3rem;
+  }
+  .row2 p{
+
+  }
+
   .column{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;  
   }
 
 @import url(//db.onlinewebfonts.com/c/b8efc807de4361147855dd87d07cb12f?family=Ano+Stencil); 
