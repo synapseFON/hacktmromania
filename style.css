@@ -88,6 +88,8 @@
     border-right: .15em solid rgb(255, 255, 255); 
     white-space: nowrap; 
     animation: typing 2.5s steps(40) 1;
+
+
   }
   section{
     background: linear-gradient(169.17deg, #E4E098 1.89%, rgba(154, 181, 139, 0.83) 21.15%, #477873 61.05%, #2D5652 91.61%);
@@ -117,6 +119,8 @@
     font-size: 1.9rem;
    color: #fff;
    margin-bottom: 5rem;
+  
+   
   }
   .row2{
     height: 450px;
@@ -165,5 +169,5 @@
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 51.5% }
+  to { width: 46% }
 }
