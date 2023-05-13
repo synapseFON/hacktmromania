@@ -131,9 +131,12 @@
 
   }
   .row2{
-    height: 270px;
+    height: 450px;
     gap: 3rem;
     margin: 2rem auto;
+    padding-bottom: 3rem;
+    bottom: 3rem;
+    position: relative;
 
   }
   .row2 p, .row2 h1{
@@ -203,6 +206,20 @@
     width: 70%;
   }
 
+  .zigzag {
+    height: 10px;
+    background: linear-gradient(
+      to right,
+      transparent 25%,
+      #333 25%,
+      #333 50%,
+      transparent 50%,
+      transparent 75%,
+      #333 75%,
+      #333
+    );
+  }
+  
 
 @import url(//db.onlinewebfonts.com/c/b8efc807de4361147855dd87d07cb12f?family=Ano+Stencil); 
 @keyframes pulsate {
