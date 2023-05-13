@@ -39,6 +39,7 @@
   
   a:hover {
     text-decoration: underline;
+    border: none;
   }
   
 
@@ -75,12 +76,13 @@
     align-items: center;
     flex-direction: column;
     background-attachment: fixed;
+    position: relative;
   }
   .hero-container i{
     font-size: 8rem;
     color: #3e3e3e58;
-    position: relative;
-    top:13rem;
+    position: absolute;
+    bottom:1rem;
   }
 
   .hero-container h1{
