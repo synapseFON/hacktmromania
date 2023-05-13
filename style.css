@@ -36,8 +36,8 @@
   
 
   .container {
-    max-width: 1500px;
-    margin: 0 auto;
+    /* max-width: 1500px; */
+    margin: 0 10rem 0 2rem;
     padding: 0 20px;
   }
   
@@ -58,45 +58,21 @@
        /* HERO */
 
   .hero-container{
-    background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    /* background-color: red; */
-    /* background-color: #333; */
-        /* background: rgb(205,224,255);
-background: radial-gradient(circle, rgba(205,224,255,1) 0%, rgba(49,64,90,1) 100%); */
   }
-  .hero-tekst{
+  .hero-container img{
+    height: 100vh;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+
+  }
+  .column{
     display: flex;
     flex-direction: column;
-    /* gap: 1rem; */
-    justify-content: center;
-    align-items: center;    
-    margin-top: 4rem;
   }
-.hero-tekst h1{
-    font-family: 'Ano Stencil', sans-serif;
-    font-size: 7rem;
-    margin: 3px;
-  color: white;
-
-  font: bold 120px Poppins, sans-serif;
-  background-image: radial-gradient( #eda735 0%,  #31405A 100%);
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-.hero-tekst h4{
-    font-family: Anybody;
-    font-size:2.1rem ;
-    color: #d6e2f6;
-    font-family: 'Anybody', cursive;
-}
-
 
 @import url(//db.onlinewebfonts.com/c/b8efc807de4361147855dd87d07cb12f?family=Ano+Stencil); 
