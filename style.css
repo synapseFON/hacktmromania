@@ -79,6 +79,8 @@
   .hero-container i{
     font-size: 8rem;
     color: #33333358;
+    position: relative;
+    top:13rem;
   }
 
   .hero-container h1{
