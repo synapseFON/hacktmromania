@@ -123,13 +123,13 @@
     font-size: 1.5rem;
   }
   .row1 h1{
-    font-size: 5rem !important;
+    font-size: 6rem !important;
     margin-top: 6rem;
     margin-bottom: 20px;
   }
   .row1 p{
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 2.2rem;
    color: #fff;
    margin-bottom: 2rem;
 
@@ -143,15 +143,14 @@
     position: relative;
 
   }
-  .row2 p, .row2 h1{
-    text-align: right;
-  }
+ 
+
   .row2 h1{
-    font-size: 3.7rem ;
+    font-size: 4rem ;
     text-align: justify;
   }
   .row2 p{
-    font-size: 1.3rem;
+    font-size: 30px;
     text-align: justify;
     color: white;
   }
@@ -217,7 +216,7 @@
   .walk1{
     width:102px;
   }
-  .lik1,.lik2{
+  .lik1, .lik2{
 width: 105px;
 height: 150px;
 background-size: cover;
@@ -229,7 +228,7 @@ background-size: cover;
     background-image: url(walk1-left.png);
     position: relative;
     right: 20px ;
-    animation: lik1 3s infinite linear;
+    /* animation: lik1 3s infinite linear; */
   }
   .lik1:hover{
     background-image: url(walk1.png);
@@ -243,12 +242,14 @@ background-size: cover;
   background-size: cover;
     background-image: url(boy-right.png);
   }
+  .row4 a:hover + .lik1{
+    background-image: url(walk1.png);
+
+  }
   .row4 a:hover + .lik2{
     background-image: url(boy-left.png);
-  }
-  .row4 a:hover + .lik1{
-    background-image: url(walk1.png) !important;
-  }
+  } 
+
 
   .download-btn {
     font-family: var(--font-sans);
@@ -318,8 +319,8 @@ background-size: cover;
   }
   .row3 {
     display: flex;
-    height: 800px;
-    margin-top: 4rem;
+    height: 750px;
+    
 
   }
   .column1 {
@@ -364,15 +365,29 @@ width: 40%
     padding: 1px;
     width: 500px;
     border-radius: 100%;
-    border: 8px  rgb(192, 231, 204) ;
+    border: 8px  #c0e7cc ;
     
     border-style: solid;
   }
 .column2 img {
-  position: absolute;
-  width: 1000px
+  position: relative;
+  width: 200px
 }
+.column2 h2 {
+  align-self: flex-end;
+  position:relative;
+  left: -20px;
+  text-align: right;
+  margin-bottom: 8rem;
+}
+ .column2 hr {
+  width: 850px;
+ }
+.column2 p{
+  margin: 3rem;
+  color: #f6f6f6
   
+}
 
 @import url(//db.onlinewebfonts.com/c/b8efc807de4361147855dd87d07cb12f?family=Ano+Stencil); 
 @keyframes pulsate {
