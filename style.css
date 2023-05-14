@@ -1,4 +1,4 @@
-
+@import "https://unpkg.com/open-props";
 
 * {
     margin: 0;
@@ -107,7 +107,7 @@
   section{
     background: linear-gradient(169.17deg, #E4E098 1.89%, rgba(154, 181, 139, 0.83) 21.15%, #477873 61.05%, #2D5652 91.61%);
     box-shadow: 0px -8px 8px 5px rgba(0, 0, 0, 0.15);
-    height: 3000px;
+    height: 2500px;
   }
   .row{
     display: flex;
@@ -209,6 +209,106 @@
   .button:hover::before {
     width: 70%;
   }
+  .row4{
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .walk1{
+    width:102px;
+  }
+  .lik1,.lik2{
+width: 105px;
+height: 150px;
+background-size: cover;
+  }
+  .lik1{
+    width: 100px;
+  height: 140px;
+  background-size: cover;
+    background-image: url(walk1-left.png);
+    position: relative;
+    right: 20px ;
+    animation: lik1 3s infinite linear;
+  }
+  .lik1:hover{
+    background-image: url(walk1.png);
+  }
+  .lik2:hover{
+    background-image: url(boy-left.png);
+  }
+  .lik2{
+    width: 110px;
+  height: 160px;
+  background-size: cover;
+    background-image: url(boy-right.png);
+  }
+  .row4 a:hover + .lik2{
+    background-image: url(boy-left.png);
+  }
+  .row4 a:hover + .lik1{
+    background-image: url(walk1.png) !important;
+  }
+
+  .download-btn {
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-6);
+    font-size: var(--font-size-5);
+    /* color: var(--gray-8); */
+    /* background: var(--gray-0); */
+    color: white;
+    background-color: transparent;
+    border: 7px solid rgb(255, 255, 255);
+    border-radius: 0;
+    padding: var(--size-4) var(--size-8);
+    transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+    transition: transform 0.1s;
+    position: relative;
+  }
+  
+  .download-btn:hover {
+    --y: -10;
+    --scale: 1.1;
+    --border-scale: 1;
+    border: none;
+    color: white;
+    background-color: rgb(145, 74, 171);
+  }
+  
+  .download-btn:active {
+    --y: 5%;
+    --scale: 0.9;
+    --border-scale: 0.9, 0.8;
+  }
+  
+  .download-btn:before {
+    content: "";
+    position: absolute;
+    inset: calc(var(--size-3) * -1);
+    border: var(--size-2) solid var(--gray-0);
+    transform: scale(var(--border-scale, 0));
+    transition: transform 0.125s;
+    
+    --angle-one: 105deg;
+    --angle-two: 290deg;
+    --spread-one: 30deg;
+    --spread-two: 40deg;
+    --start-one: calc(var(--angle-one) - (var(--spread-one) * 0.5));
+    --start-two: calc(var(--angle-two) - (var(--spread-two) * 0.5));
+    --end-one: calc(var(--angle-one) + (var(--spread-one) * 0.5));
+    --end-two: calc(var(--angle-two) + (var(--spread-two) * 0.5));
+    
+    mask: conic-gradient(
+      transparent 0 var(--start-one),
+      white var(--start-one) var(--end-one),
+      transparent var(--end-one) var(--start-two),
+      white var(--start-two) var(--end-two),
+      transparent var(--end-two)
+    );
+    
+    z-index: -1;
+  }
+
 
   .divider {
     background-image: url(slide-argentina2.jpg);
@@ -290,4 +390,15 @@ width: 40%
 @keyframes typing {
   from { width: 0 }
   to { width: 46% }
+}
+
+@keyframes lik1 {
+  0% {
+    background-image: url(walk1-left.png);
+  }
+  50%{
+    background-image: url(walk1.png);
+  }
+  100% { background-image: url(walk1-left.png);}
+
 }
