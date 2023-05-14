@@ -107,7 +107,7 @@
   section{
     background: linear-gradient(169.17deg, #E4E098 1.89%, rgba(154, 181, 139, 0.83) 21.15%, #477873 61.05%, #2D5652 91.61%);
     box-shadow: 0px -8px 8px 5px rgba(0, 0, 0, 0.15);
-    height: 3000px;
+    height: 2650px;
   }
   .row{
     display: flex;
@@ -212,6 +212,20 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    height: 250px;
+  }
+  .row5{
+    height: 90px;
+
+  }
+  .lds-default{
+    margin: 0 auto;
+    height: 100px !important;
+    display: none !important;
+  }
+  .loading{
+    display: block !important;
+    animation: fadein 1.7s ease;
   }
   .walk1{
     width:102px;
@@ -228,7 +242,7 @@ background-size: cover;
     background-image: url(walk1-left.png);
     position: relative;
     right: 20px ;
-    /* animation: lik1 3s infinite linear; */
+    animation: lik1 3s infinite linear;
   }
   .lik1:hover{
     background-image: url(walk1.png);
@@ -319,8 +333,8 @@ background-size: cover;
   }
   .row3 {
     display: flex;
-    height: 750px;
-    
+    height: 800px;
+    margin-top: 4rem;
 
   }
   .column1 {
@@ -365,29 +379,15 @@ width: 40%
     padding: 1px;
     width: 500px;
     border-radius: 100%;
-    border: 8px  #c0e7cc ;
+    border: 8px  rgb(192, 231, 204) ;
     
     border-style: solid;
   }
 .column2 img {
-  position: relative;
-  width: 200px
+  position: absolute;
+  width: 1000px
 }
-.column2 h2 {
-  align-self: flex-end;
-  position:relative;
-  left: -20px;
-  text-align: right;
-  margin-bottom: 8rem;
-}
- .column2 hr {
-  width: 850px;
- }
-.column2 p{
-  margin: 3rem;
-  color: #f6f6f6
   
-}
 
 @import url(//db.onlinewebfonts.com/c/b8efc807de4361147855dd87d07cb12f?family=Ano+Stencil); 
 @keyframes pulsate {
@@ -407,13 +407,13 @@ width: 40%
   to { width: 46% }
 }
 
-@keyframes lik1 {
-  0% {
-    background-image: url(walk1-left.png);
+@keyframes fadein{
+   from { 
+    top: -50px;
+    opacity: 0;
   }
-  50%{
-    background-image: url(walk1.png);
+  to { 
+    opacity: 1;
+    top: 0;
   }
-  100% { background-image: url(walk1-left.png);}
-
 }
