@@ -107,7 +107,7 @@
   section{
     background: linear-gradient(169.17deg, #E4E098 1.89%, rgba(154, 181, 139, 0.83) 21.15%, #477873 61.05%, #2D5652 91.61%);
     box-shadow: 0px -8px 8px 5px rgba(0, 0, 0, 0.15);
-    height: 3000px;
+    height: 2650px;
   }
   .row{
     display: flex;
@@ -213,6 +213,20 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    height: 250px;
+  }
+  .row5{
+    height: 90px;
+
+  }
+  .lds-default{
+    margin: 0 auto;
+    height: 100px !important;
+    display: none !important;
+  }
+  .loading{
+    display: block !important;
+    animation: fadein 1.7s ease;
   }
   .walk1{
     width:102px;
@@ -229,7 +243,7 @@ background-size: cover;
     background-image: url(walk1-left.png);
     position: relative;
     right: 20px ;
-    animation: lik1 3s infinite linear; 
+    /* animation: lik1 3s infinite linear;  */
   }
   .lik1:hover{
     background-image: url(walk1.png);
@@ -372,7 +386,119 @@ background-size: cover;
     position: absolute;
     width: 1000px
   }
-  
+  footer{
+    height: 200px;
+    background-color: #17181a;
+    justify-content: flex;
+    justify-content: center;
+    align-items: center
+
+  }
+  footer *{
+    color: white;
+  }
+  footer i{
+    font-size: 5rem;
+    height: 50px;
+
+  }
+ footer .column{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+ }
+ footer .row{
+  height: 70px;
+  font-size: 1.5rem;
+ }
+ footer h4{
+  padding-top: 17px;
+ }
+
+ /* animation */
+ .lds-default {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-default div {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  animation: lds-default 1.2s linear infinite;
+}
+.lds-default div:nth-child(1) {
+  animation-delay: 0s;
+  top: 37px;
+  left: 66px;
+}
+.lds-default div:nth-child(2) {
+  animation-delay: -0.1s;
+  top: 22px;
+  left: 62px;
+}
+.lds-default div:nth-child(3) {
+  animation-delay: -0.2s;
+  top: 11px;
+  left: 52px;
+}
+.lds-default div:nth-child(4) {
+  animation-delay: -0.3s;
+  top: 7px;
+  left: 37px;
+}
+.lds-default div:nth-child(5) {
+  animation-delay: -0.4s;
+  top: 11px;
+  left: 22px;
+}
+.lds-default div:nth-child(6) {
+  animation-delay: -0.5s;
+  top: 22px;
+  left: 11px;
+}
+.lds-default div:nth-child(7) {
+  animation-delay: -0.6s;
+  top: 37px;
+  left: 7px;
+}
+.lds-default div:nth-child(8) {
+  animation-delay: -0.7s;
+  top: 52px;
+  left: 11px;
+}
+.lds-default div:nth-child(9) {
+  animation-delay: -0.8s;
+  top: 62px;
+  left: 22px;
+}
+.lds-default div:nth-child(10) {
+  animation-delay: -0.9s;
+  top: 66px;
+  left: 37px;
+}
+.lds-default div:nth-child(11) {
+  animation-delay: -1s;
+  top: 62px;
+  left: 52px;
+}
+.lds-default div:nth-child(12) {
+  animation-delay: -1.1s;
+  top: 52px;
+  left: 62px;
+}
+@keyframes lds-default {
+  0%, 20%, 80%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
 
 @import url(//db.onlinewebfonts.com/c/b8efc807de4361147855dd87d07cb12f?family=Ano+Stencil); 
 @keyframes pulsate {
@@ -392,13 +518,13 @@ background-size: cover;
   to { width: 46% }
 }
 
-@keyframes lik1 {
-  0% {
-    background-image: url(walk1-left.png);
+@keyframes fadein{
+   from { 
+    top: -50px;
+    opacity: 0;
   }
-  50%{
-    background-image: url(walk1.png);
+  to { 
+    opacity: 1;
+    top: 0;
   }
-  100% { background-image: url(walk1-left.png);}
-
 }
